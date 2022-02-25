@@ -44,7 +44,7 @@ async def play_(_, message: types.Message):
     )
 
 
-@Client.on_message(filters.command(["vplay", "izle"]) & filters.group)
+@Client.on_message(filters.command(["vplay", "vplay"]) & filters.group)
 @only_admin
 async def vplay_(_, message: types.Message):
     chat_id = message.chat.id
@@ -70,7 +70,7 @@ async def vplay_(_, message: types.Message):
     )
 
 
-__cmds__ = ["play", "oynat", "vplay", "izle"]
+__cmds__ = ["play", "play", "vplay", "vplay"]
 __help__ = {
     "play": "help_play",
     "oynat": "help_oynat", 
